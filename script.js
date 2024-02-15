@@ -84,7 +84,7 @@ dotButton.addEventListener(`click`, addDot);
 
 function addDot() {
     if (!input.textContent.includes(`.`)) {
-        input.textContent += `.`
+        input.textContent += `.`;
     }
 }
 
@@ -93,7 +93,7 @@ eraseButton.addEventListener(`click`, deleteDigit);
 
 function deleteDigit() {
     if (input.textContent.length <= 1) {
-        input.textContent = "0"
+        input.textContent = "0";
     } else if (input.textContent !== "0") {
         input.textContent = input.textContent.slice(0, input.textContent.length-1);
     }
